@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+*{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    background: rgb(1,1,1);
+    background: linear-gradient(52deg, rgba(1,1,1,1) 0%, rgba(48,0,123,0.99) 100%);
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    display: flex;
+}
+#eyepng{
+    width: 42rem;
+    margin-top: 5rem;
+    margin-left: 2rem;
+    opacity: 0.11;
+}
+input{
+    height: 3.3rem;
+    width: 20rem;
+    outline: none;
+    font-size: 19px;
+    border-radius: 7px;
+    padding-left: 15px;
+    color: grey;
+}
+.password-container{
+    position: absolute;
+    top: 18rem;
+    left: 39rem;
+}
+.container h1{
+    color: white;
+    font-weight: 400;
+    position: absolute;
+    left: 42rem;
+    top: 13rem;
+}
+.container span{
+    color: deeppink;
+    font-weight: 200;
+}
+.password-container img{
+    position: absolute;
+    right: 20px;
+    width: 25px;
+    top: 15px;
+    cursor: pointer;
+}

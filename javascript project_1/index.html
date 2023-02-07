@@ -1,0 +1,39 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <title>project 1</title>
+  </head>
+  <body>
+    <div class="container" style="position: relative">
+      <img src="eye-close.png" id="eyepng" />
+      <h1>Hide / <span>Show</span></h1>
+      <div class="password-container">
+        <input
+          type="password"
+          placeholder="password"
+          id="password"
+          maxlength="10"
+        />
+        <img src="eye-close.png" id="change-icon" onclick="changeicon()" />
+      </div>
+    </div>
+    <script>
+      let password = document.querySelector("input");
+      let eyeicon = document.getElementById("change-icon");
+      console.log(password);
+      function changeicon() {
+        if (password.type == "password") {
+          password.type = "text";
+          eyeicon.src = "eye-open.png";
+          console.log("hey");
+        } else {
+          password.type = "password";
+          eyeicon.src = "eye-close.png";
+        }
+      }
+    </script>
+  </body>
+</html>
